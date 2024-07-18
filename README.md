@@ -16,19 +16,19 @@ Before getting started, ensure you have the following installed:
 ## Getting Started
 Follow these steps to deploy the application on AWS ECS:
 1. Clone the Repository:
-  > git clone <https://github.com/Frnn4268/AWS_ECS-Docker.git>
+    > git clone <https://github.com/Frnn4268/AWS_ECS-Docker.git>
 
-  > cd demo_node_app
+    > cd demo_node_app
 
 2. Build the Docker Image:
 > docker build -t my-application-image .
 
 3. Push Docker Image to ECR:
-  > aws ecr get-login-password --region <aws_region> | docker login --username AWS --password-stdin <ecr_repository_url>
+    > aws ecr get-login-password --region <aws_region> | docker login --username AWS --password-stdin <ecr_repository_url>
   
-  > docker tag my-application-image:latest <ecr_repository_url>/my-application-image:latest
+    > docker tag my-application-image:latest <ecr_repository_url>/my-application-image:latest
 
-  > docker push <ecr_repository_url>/my-application-image:latest
+    > docker push <ecr_repository_url>/my-application-image:latest
 
 4. Deploy with Terraform:
    > terraform init
