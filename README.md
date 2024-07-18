@@ -21,7 +21,7 @@ Follow these steps to deploy the application on AWS ECS:
     > cd demo_node_app
 
 2. Build the Docker Image:
-> docker build -t my-application-image .
+    > docker build -t my-application-image .
 
 3. Push Docker Image to ECR:
     > aws ecr get-login-password --region <aws_region> | docker login --username AWS --password-stdin <ecr_repository_url>
