@@ -16,9 +16,9 @@ Before getting started, ensure you have the following installed:
 ## Getting Started
 Follow these steps to deploy the application on AWS ECS:
 1. Clone the Repository:
-    > git clone <https://github.com/Frnn4268/AWS_ECS-Docker.git>
+    > git clone <https://github.com/Frnn4268/docker-aws-ecs-nodejs.git>
 
-    > cd demo_node_app
+    > cd .\docker-aws-ecs-nodejs\app\
 
 2. Build the Docker Image:
     > docker build -t my-application-image .
